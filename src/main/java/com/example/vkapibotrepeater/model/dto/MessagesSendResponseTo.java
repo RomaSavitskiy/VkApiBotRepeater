@@ -5,6 +5,16 @@ import lombok.*;
 
 import java.util.Objects;
 
+/**
+ * Data Transfer Object (DTO) for "messages.send" response via VK API.
+ * <br>
+ * This class encapsulates the response details from a message send request, including peer ID, message ID, and any errors that occurred.
+ * It uses Lombok annotations to generate boilerplate code like constructors and getters.
+ * It also uses Jackson annotations for JSON property mapping.
+ *
+ * @author Roman Savitski
+ * @since 1.0
+ */
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor

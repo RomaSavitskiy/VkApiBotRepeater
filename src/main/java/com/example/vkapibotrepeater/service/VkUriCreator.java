@@ -12,6 +12,15 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 
+/**
+ * Component for creating URIs for VK API requests.
+ * <br>
+ * This component is responsible for creating URIs for VK API requests, particularly for sending messages.
+ * It uses the provided {@link VkApiPropertiesConfiguration} and {@link ObjectMapper} to construct the URIs with appropriate parameters.
+ *
+ * @author Roman Savitski
+ * @since 1.0
+ */
 @Component
 @RequiredArgsConstructor
 public class VkUriCreator {

@@ -12,6 +12,16 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 
+/**
+ * Data Transfer Object (DTO) for handling callback messages.
+ * <br>
+ * This class is used to encapsulate the data received in callback requests.
+ * It uses Lombok annotations to generate boilerplate code like constructors, getters, and builders.
+ * It also uses Jackson annotations for JSON property mapping and ignoring unknown properties.
+ *
+ * @author Roman Savitski
+ * @since 1.0
+ */
 @Builder
 @Getter
 @AllArgsConstructor

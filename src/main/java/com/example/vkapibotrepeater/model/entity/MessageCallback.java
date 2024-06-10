@@ -8,6 +8,16 @@ import lombok.NoArgsConstructor;
 
 import java.util.Objects;
 
+/**
+ * Entity representing a message callback from the VK API.
+ * <br>
+ * This class encapsulates the details of a message received from VK API callbacks.
+ * It uses Lombok annotations to generate boilerplate code like constructors and getters.
+ * It also uses JPA annotations for ORM (Object-Relational Mapping).
+ *
+ * @author Roman Savitski
+ * @since 1.0
+ */
 @Entity
 @Builder
 @Getter

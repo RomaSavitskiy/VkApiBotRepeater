@@ -11,6 +11,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
+/**
+ * Data Transfer Object (DTO) for "messages.send" request via VK API.
+ * <br>
+ * This class encapsulates the parameters required for a message send request to the VK API.
+ * It uses Lombok annotations to generate boilerplate code like getters, setters, and builders.
+ * It also uses Jackson annotations for JSON property mapping and ordering.
+ *
+ * @author Roman Savitski
+ * @since 1.0
+ */
 @Builder
 @Getter
 @Setter
@@ -111,10 +121,26 @@ public class MessagesSendRequestTo implements Serializable {
         return result;
     }
 
+    /**
+     * DTO for handling error responses from VK API.
+     * <br>
+     * This class encapsulates error code and error message details.
+     *
+     * @see Serializable
+     * @since 1.0
+     */
     @Getter
     public static class MessagesSendErrorResultDto {
+
+        /**
+         * The error code returned by VK API.
+         */
         @JsonProperty(value = "error_code")
         Long errorCode;
+
+        /**
+         * The error message returned by VK API.
+         */
         @JsonProperty(value = "error_msg")
         String errorMsg;
 
@@ -127,3 +153,4 @@ public class MessagesSendRequestTo implements Serializable {
         }
     }
 }
+
