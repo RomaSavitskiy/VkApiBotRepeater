@@ -26,23 +26,24 @@
 >
 
 
-#### 4. Set environment variables for PostgreSQL in resources/application.yml
+#### 3. Set environment variables for PostgreSQL in resources/application.yml
 > | Variable Name | Description                  |
 > |---------------|------------------------------|
 > | uri           | Uri your database            |
 > | username      | Username of your DBMS server |
-> | password      | зфыыцщкв of your DBMS server |
+> | password      | Password of your DBMS server |
 >
 
-#### 5. Build the JAR
-> On a Linux host: `./mvnw clean package`
+#### 4. Build the JAR
+> On a Linux host: `./gradlew clean build`
 >
-> On a Windows host: `mvnw.cmd clean package`
+> On a Windows host: `gradlew.bat clean build`
 >
 
-#### 6. Run the Application
+#### 5. Run the Application
 Execute the following command to run the application:
-> `java -jar targer/Responder.jar`
+> `java -jar build/libs/VkApiBotIterator-0.0.1-SNAPSHOT.jar`
+> 
 > 
 To enable external HTTPS on the local machine, Ngrok can be used.
 
